@@ -1,0 +1,9 @@
+server {
+	listen 80;
+	server_name <%= @site -%>;
+	root /srv/sites/<%= @site %>;
+	location / {
+		index index.html index.htm;
+		autoindex on;
+	}
+}
